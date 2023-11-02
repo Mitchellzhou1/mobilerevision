@@ -1,0 +1,673 @@
+.nyu-heading {
+  height: 5vw;
+}
+
+.osiris {
+  height: 5vh;
+}
+
+.ctftext {
+    font-family: Kanit; line-height: 140%; margin-top: 15px; bold; font-size: 1.2vw;
+}
+
+.level-text{
+    font-family: Kanit; line-height: 60%; margin-top: 15px; font-size: 1.2vw; font-weight: bold;
+}
+
+.description{
+    font-family: Kanit; font-size: 1.2vw;
+}
+
+.date {
+    font-family: Kanit; line-height: 140%; height: 5vh; font-weight:bold;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 30px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+nav a {
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    font-size: 27px;
+    text-decoration: none;
+    padding: 30px 25px;
+    transition: background-color 0.0s;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.bio {
+    width: 60%;
+    padding: 8.07%;
+    padding-top: 5vh;
+    padding-bottom: 0px;
+    margin-top: 10vh;
+}
+
+.bio h1 {
+    font-size: 950%;
+    color: #000;
+    font-family: 'Noto Color Emoji', 'Kanit';
+    margin: 0px 0;
+}
+
+.bio h2 {
+    font-size: 400%;
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    margin: 0px;
+    padding-bottom: 3%;
+}
+
+.bio p {
+    font-size: 130%;
+    color: #000;
+    font-family: 'Kanit';
+    text-align: left;
+    margin-bottom: 3%;
+    margin-top: 0px;
+}
+
+.profile {
+    background-image: url('/images/portrait.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 96vh;
+    width: 80vh;
+    margin-top: 8vh;
+}
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 48%;
+}
+
+.info {
+    width: 70%;
+    padding: 1pc;
+    padding-left: 10pc;
+    padding-right: 1vw;
+    padding-top: 30px;
+}
+
+.info h3 {
+    font-size: 3.5vw;
+    color: #000;
+    font-family: 'Kanit';
+    margin: 0px 0;
+    height: 80px;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+.info h2 {
+    font-size: 6vw;
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    margin: 0px;
+    height: 120px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.info h4 {
+    font-size: 3vw;
+    color: #000;
+    font-family: 'Kanit';
+    margin: 0px;
+    height: 70px;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+.info small {
+    font-size: 1.2vw;
+    color: #000;
+    font-family: 'Kanit';
+    margin: 0px;
+    height: 70px;
+    line-height: 1.2;
+}
+
+.info p {
+    font-size: 1.5vh;
+    color: #000;
+    font-family: 'Kanit';
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.info desc {
+    font-size: 1.2vw;
+    color: #000;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.custom-link {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.custom-link:hover {
+    color: #FFF !important;
+    background-color: #702963;
+}
+
+.custom-linkblue {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.custom-linkblue:hover {
+    color: #FFF !important;
+    background-color: #00739c;
+}
+
+.expand-on-hover {
+    transition: transform 0.3s;
+    width: 35%;
+    height: 35%;
+    left: 35%
+}
+
+.expand-on-hover:hover {
+    transform: scale(1.2);
+}
+
+.datetime {
+    font-size: 20px;
+    color: #00739c;
+}
+
+.h4:hover {
+    color: #FFFFFF;
+    background-color: #8200be;
+}
+
+/*@keyframes bouncing {
+    0% { top: 60pc; }
+    50% { top: 63pc; }
+    100% { top: 60pc; }
+}*/
+
+/* Using Transform to just visually offset the element */
+@keyframes bouncing {
+    0% { transform: translateY(1em); }
+    50% { transform: translateY(-1em); }
+    100% { transform: translateY(1em);}
+}
+
+.arrow-container {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out alternate;
+    width: 2.5vw;
+}
+
+#bio-container, #profile-container {
+    height: autos;
+}
+
+table {
+    border: none;
+}
+
+table td {
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 15px;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2vw;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.divider {
+    font-family: 'Kanit', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.divider h2 {
+    font-size: 8vw;
+    margin: 0;
+}
+
+.divider p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+pre {
+    font-family: Arial, sans-serif;
+    font-size: 1.2vw;
+    margin-top: 1.2 vh;
+    margin-bottom: 0px;
+}
+
+wave {
+    font-size: 70%;
+    height: 0px;
+    vertical-align: 0.16em;
+}
+
+red {
+    color: #c90101;
+    font-weight: bold;
+}
+
+blue {
+    color: #00739c;
+    font-weight: bold;
+}
+
+green {
+    color: #007325;
+    font-weight: bold;
+}
+
+.black {
+    color: #000000;
+    font-weight: bold;
+}
+
+.black:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: bold;
+}
+
+.spoofing {
+    background-image: url('emailSpoofer.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 50%;
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#flagInput1 {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00739c;
+    border-radius: 5px;
+    outline: none;
+    width: 350px;
+}
+#submitButton1 {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #00739c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resultMessage1 {
+    font-size: 20px;
+}
+
+#confetti1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+hint {
+    font-size: 18px;
+    color: #fff;
+}
+
+hint:hover {
+    background-color: #000000;
+    font-weight: bold;
+}
+
+#confetti2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+
+#flagInput2 {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00739c;
+    border-radius: 5px;
+    outline: none;
+    width: 350px;
+}
+#submitButton2 {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #00739c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resultMessage2 {
+    font-size: 20px;
+}
+
+.icon-container {
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.icon-container:hover {
+    transform: scale(1.4);
+}
+@media only screen and (max-width: 900px) {
+    header nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .intro {
+        text-align: center; /* Center the content */
+        width: 140%; /* Adjust the width for smaller screens */
+    }
+    wave {
+        font-size: 70%;
+        height: 0px;
+        vertical-align: 0.16em;
+    }
+    .bio {
+        padding: 20px;
+    }
+    .bio h1 {
+        font-size: 600%;
+    }
+
+    .bio h2 {
+        font-size: 300%;
+    }
+    .profile {
+        display: none; /* Example of hiding an element on smaller screens */
+    }
+    .arrow{
+        display: none;
+    }
+    .divider h2 {
+        font-size: 500%;
+    }
+    .divider p {
+        font-size: 150%;
+    }
+    .info img {
+        max-width: 100%;
+        height: auto;
+    }
+    .profile {
+        display: none;
+    }
+    .section {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        display: block;
+        padding: 0 0;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 8vh;
+    }
+    .info h3 {
+        font-size: 250%;
+        height: 5vh;
+    }
+    .info desc{
+        font-size: 110%;
+    }
+
+
+}@media only screen and (max-width: 900px) {
+    header nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .intro {
+        text-align: center; /* Center the content */
+        width: 140%; /* Adjust the width for smaller screens */
+    }
+    wave {
+        font-size: 70%;
+        height: 0px;
+        vertical-align: 0.16em;
+    }
+    .bio {
+        padding: 20px;
+    }
+    .bio h1 {
+        font-size: 600%;
+    }
+
+    .bio h2 {
+        font-size: 300%;
+    }
+    .profile {
+        display: none; /* Example of hiding an element on smaller screens */
+    }
+    .arrow{
+        display: none;
+    }
+    .divider h2 {
+        font-size: 500%;
+    }
+    .divider p {
+        font-size: 150%;
+    }
+    .info img {
+        max-width: 100%;
+        height: auto;
+    }
+    .profile {
+        display: none;
+    }
+    .section {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        display: block;
+        padding: 0 0;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 8vh;
+    }
+    .info h3 {
+        font-size: 250%;
+        height: 5vh;
+    }
+    .info desc{
+        font-size: 110%;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    header nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .intro {
+        text-align: center;
+        width: 140%;
+    }
+    wave {
+        font-size: 70%;
+        height: 0px;
+        vertical-align: 0.16em;
+    }
+    .bio {
+        padding: 20px;
+    }
+    .bio h1 {
+        font-size: 600%;
+    }
+
+    .bio h2 {
+        font-size: 300%;
+    }
+    .profile {
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .divider h2 {
+        font-size: 500%;
+    }
+    .divider p {
+        font-size: 150%;
+    }
+    .info img {
+        max-width: 100%;
+        height: auto;
+    }
+    .profile {
+        display: none;
+    }
+    .section {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        display: block;
+        padding: 0 0;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 8vh;
+    }
+    .info h3 {
+        font-size: 250%;
+        height: 5vh;
+    }
+    .info desc{
+        font-size: 110%;
+    }
+
+
+}
+

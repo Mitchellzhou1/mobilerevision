@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mitchell's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .contact-info {
+            display: flex;
+            justify-content: center;
+        }
+
+        .icon-container {
+            margin: 0 4vw;
+        }
+
+        .icon-container div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image {
+            cursor: pointer;
+            height: 12vh;
+            width: 6.8vw;
+        }
+        .section {
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-direction:
+            }
+
+            .icon-container {
+                margin: 4vh 0;
+            }
+            .image{
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="background.html">Background</a>
+            <a href="CTF.html">CTFs</a>
+            <a href="projects.html">Projects</a>
+            <a href="research.html">Research</a>
+            <a href="#" style="background-color: white; color: black;">Contact</a>
+        </nav>
+    </header>
+
+    <div class="divider" style="padding-top: 100px;">
+        <h2>Contact</h2>
+        <p>Like what you see? Let's chat!</p>
+    </div>
+
+    <div class="section" style="margin-top: 3%;">
+        <div class="image-container contact-info">
+            <div class="icon-container">
+                <div>
+                    <img src="/images/linkedin.png" class="image" onclick="window.location.href='https://www.linkedin.com/in/mitchell-zhou/'">
+                    <p>Mitchell Zhou</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <div>
+                    <img src="/images/facebook.png" class="image" onclick="window.location.href='https://www.facebook.com/mitchell.zhou/'">
+                    <p>Mitchell Zhou</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <div>
+                    <img src="/images/gmail.jpg" class="image" onclick="window.location.href='mailto:mitche.zhou1@gmail.com?subject=Hello&body=I%20hope%20you%20are%20doing%20well!'">
+                    <p>mitche.zhou1[at]gmail.com</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <div>
+                    <img src="/images/github.png" class="image" onclick="window.location.href='https://github.com/Mitchellzhou1'">
+                    <p>Mitchellzhou1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
